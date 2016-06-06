@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<BorderPane prefHeight="350.0" prefWidth="600.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="userclient.gui.controller.RootLayoutController">
+  <stylesheets>
+    <URL value="@JMetroLightTheme.css" />
+  </stylesheets>
+  <top>
+    <MenuBar>
+      <menus>
+        <Menu mnemonicParsing="false" text="Client">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#handleDisconnectMenuItemAction" text="Disconnect" visible="false" fx:id="disconnectMenuItem" />
+            <MenuItem mnemonicParsing="false" onAction="#handleCreateUserMenuItemAction" text="Create User" visible="false" fx:id="createUserMenuItem" />
+            <MenuItem mnemonicParsing="false" onAction="#handleDeleteUserMenuItemAction" text="Delete User" visible="false" fx:id="deleteUserMenuItem" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+  </top>
+</BorderPane>

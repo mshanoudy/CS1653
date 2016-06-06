@@ -1,0 +1,5 @@
+Run:
+        Group Server: java -cp .:bcprov-jdk15on-150.jar server.RunGroupServer
+        File  Server: java -cp .:bcprov-jdk15on-150.jar server.RunFileServer
+        Simple User Client: java -cp .:bcprov-jdk15on-150.jar server.SimpleUserClient
+        GUI    User Client: java -cp .:bcprov-jdk15on-150.jar userclient.gui.controller.Main

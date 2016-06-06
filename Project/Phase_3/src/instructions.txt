@@ -1,0 +1,11 @@
+** Note: Use Java Version 1.8.0 **
+
+From the /src/ folder
+    Compile:
+        Group Server: javac -cp .:bcprov-jdk15on-150.jar ./server/RunGroupServer.java
+        File  Server: javac -cp .:bcprov-jdk15on-150.jar ./server/RunFileServer.java
+        User  Client: javac -cp .:bcprov-jdk15on-150.jar ./userclient/gui/controller/Main.java
+    Run:
+        Group Server: java -cp .:bcprov-jdk15on-150.jar server.RunGroupServer
+        File  Server: java -cp .:bcprov-jdk15on-150.jar server.RunFileServer
+        User  Client: java -cp .:bcprov-jdk15on-150.jar userclient.gui.controller.Main

@@ -1,0 +1,8 @@
+** Note: Use Java Version 1.8.0 for GUI **
+
+From the /src/ folder
+    Compile:
+        Group Server: javac -cp .:bcprov-jdk15on-150.jar ./server/RunGroupServer.java
+        File  Server: javac -cp .:bcprov-jdk15on-150.jar ./server/RunFileServer.java
+        Simple User Client: javac -cp .:bcprov-jdk15on-150.jar ./server/SimpleUserClient.java
+        GUI    User Client: javac -cp .:bcprov-jdk15on-150.jar ./userclient/gui/controller/Main.java

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="userclient.gui.controller.LoginSceneController">
+  <children>
+    <VBox id="VBox" alignment="CENTER" spacing="5.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+      <children>
+        <VBox id="VBox" alignment="CENTER" spacing="5.0">
+          <children>
+            <Label text="Username" textFill="BLACK" />
+            <TextField fx:id="userNameTxtFld" prefWidth="228.0" />
+            <Label text="Password" textFill="BLACK" />
+            <PasswordField fx:id="passwordField" prefWidth="200.0" />
+          </children>
+        </VBox>
+        <HBox id="HBox" alignment="CENTER" spacing="5.0">
+          <children>
+            <VBox id="VBox" alignment="CENTER_LEFT" fillWidth="true" spacing="5.0">
+              <children>
+                <Label alignment="CENTER" prefWidth="124.0" text="Group Server Name" textFill="BLACK" />
+                <TextField fx:id="groupServerNameTxtFld" prefWidth="149.0" text="localhost" />
+              </children>
+              <padding>
+                <Insets />
+              </padding>
+            </VBox>
+            <VBox id="VBox" alignment="CENTER_LEFT" spacing="5.0">
+              <children>
+                <Label alignment="CENTER" prefWidth="31.0" text="Port" textFill="BLACK" />
+                <TextField fx:id="groupServerPortTxtFld" prefWidth="51.0" text="8765" />
+              </children>
+            </VBox>
+          </children>
+        </HBox>
+        <HBox id="HBox" alignment="CENTER" spacing="5.0">
+          <children>
+            <VBox id="VBox" alignment="CENTER_LEFT" fillWidth="true" spacing="5.0">
+              <children>
+                <Label alignment="CENTER" prefWidth="124.0" text="File Server Name" textFill="BLACK" />
+                <TextField fx:id="fileServerNameTxtFld" prefWidth="149.0" text="localhost" />
+              </children>
+              <padding>
+                <Insets />
+              </padding>
+            </VBox>
+            <VBox id="VBox" alignment="CENTER_LEFT" spacing="5.0">
+              <children>
+                <Label alignment="CENTER" prefWidth="31.0" text="Port" textFill="BLACK" />
+                <TextField fx:id="fileServerPortTxtFld" prefWidth="51.0" text="4321" />
+              </children>
+            </VBox>
+          </children>
+        </HBox>
+        <Button mnemonicParsing="false" onAction="#handleLoginButtonAction" text="Login" />
+      </children>
+    </VBox>
+  </children>
+  <stylesheets>
+    <URL value="@JMetroLightTheme.css" />
+  </stylesheets>
+</AnchorPane>

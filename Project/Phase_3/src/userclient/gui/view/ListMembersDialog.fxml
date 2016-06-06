@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.9998779296875" prefWidth="295.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="userclient.gui.controller.ListMembersController">
+  <children>
+    <VBox id="VBox" alignment="CENTER" prefHeight="343.0" prefWidth="230.0" spacing="5.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+      <children>
+        <ListView fx:id="memberListView" prefHeight="309.0" prefWidth="230.0" />
+        <HBox id="HBox" alignment="CENTER" spacing="85.0">
+          <children>
+            <HBox id="HBox" alignment="CENTER" spacing="5.0">
+              <children>
+                <Button mnemonicParsing="false" onAction="#handleAddMemberButtonAction" text="+" />
+                <Button mnemonicParsing="false" onAction="#handleDeleteMemberButtonAction" prefWidth="33.0" text="-" />
+              </children>
+            </HBox>
+            <Button cancelButton="true" mnemonicParsing="false" onAction="#handleCancelButtonAction" text="Cancel" />
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+  </children>
+  <stylesheets>
+    <URL value="@JMetroLightTheme.css" />
+  </stylesheets>
+</AnchorPane>

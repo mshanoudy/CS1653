@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="600.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="userclient.gui.controller.MainSceneController">
+  <children>
+    <GridPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+      <children>
+        <AnchorPane prefHeight="27.0" prefWidth="590.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <children>
+            <HBox id="HBox" alignment="CENTER" layoutX="14.0" layoutY="4.0" spacing="5.0">
+              <children>
+                <Button mnemonicParsing="false" onAction="#handleAddGroupButtonAction" text="+" />
+                <Button mnemonicParsing="false" onAction="#handleDeleteGroupButtonAction" prefWidth="32.999908447265625" text="-" />
+                <Button mnemonicParsing="false" onAction="#handleListMembersButtonAction" prefWidth="32.999908447265625" text="i" />
+              </children>
+            </HBox>
+            <Button layoutX="402.0" layoutY="5.0" mnemonicParsing="false" onAction="#handleDeleteFileButtonAction" prefWidth="32.999908447265625" text="-" />
+          </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+          <children>
+            <GridPane prefHeight="256.0" prefWidth="590.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                  <children>
+                    <ListView fx:id="groupListView" prefHeight="256.0" prefWidth="197.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0" />
+                  </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                  <children>
+                    <TreeView fx:id="localFileTreeView" editable="false" onDragDetected="#handleLocalFileTreeViewOnDragDetected" onDragDone="#handleLocalFileTreeViewOnDragDone" onDragDropped="#handleLocalFileTreeViewOnDragDropped" onDragOver="#handleLocalFileTreeViewOnDragOver" prefHeight="256.0" prefWidth="197.0" showRoot="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0" />
+                  </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                  <children>
+                    <TreeView fx:id="serverFileTreeView" editable="false" onDragDetected="#handleServerFileTreeViewOnDragDetected" onDragDone="#handleServerFileTreeViewOnDragDone" onDragDropped="#handleServerFileTreeViewOnDragDropped" onDragOver="#handleServerFileTreeViewOnDragOver" prefHeight="256.0" prefWidth="196.0" showRoot="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0" />
+                  </children>
+                </AnchorPane>
+              </children>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+          </children>
+        </AnchorPane>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="199.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="371.0" minHeight="10.0" prefHeight="262.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+  <stylesheets>
+    <URL value="@JMetroLightTheme.css" />
+  </stylesheets>
+</AnchorPane>
